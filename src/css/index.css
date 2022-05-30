@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('/public/JetBrainsMono.woff2') format('woff2-variations');
+}
+   
+html {
+    color: #222;
+}
+
+#editors {
+    display: flex;
+}
+
+.editor {
+    flex: 50%;
+    margin: 0 8px;
+    height: calc(100vh - 160px);
+    border-radius: 5px;
+    border: 1px solid black;
+    box-sizing:border-box;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.headercontainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#msg-box {
+    display: flex;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    background-color: #121317;
+    color: #aaa;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px 0px;
+    border-radius: 5px;
+    width: calc(100vw - 80px);
+    max-width: 350px;
+    margin-right: 50px;
+    height: 56px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.3;
+    border: 1px solid black;
+}
+
+#msg-box.err {
+    background-color: rgb(63, 20, 20);
+}
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+}
+
+body {
+	font-family: 'JetBrains Mono', monospace;
+	line-height: 1.75em;
+	font-size: 16px;
+	background-color: #181a1f;
+	color: #aaa;
+}
+
+@media (min-width: 1921px) {
+	body {
+		font-size: 18px;
+	}
+}

@@ -1,0 +1,41 @@
+{
+  "name": "basm",
+  "version": "1.0.0",
+  "description": "basm.spaceface.dev",
+  "main": "src/js/index.js",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaceface777/basm.git"
+  },
+  "keywords": [
+    "asm",
+    "wasm",
+    "editor"
+  ],
+  "author": "Raúl Hernández",
+  "license": "Zlib",
+  "bugs": {
+    "url": "https://github.com/spaceface777/basm/issues"
+  },
+  "homepage": "https://github.com/spaceface777/basm#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0",
+    "webpack-merge": "^5.8.0",
+    "write-file-webpack-plugin": "^4.5.1"
+  },
+  "dependencies": {
+    "ace-builds": "^1.5.1",
+    "easydropdown": "^4.2.0"
+  }
+}
